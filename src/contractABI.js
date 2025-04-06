@@ -1,33 +1,5 @@
 const contractABI = [
 	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_title",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_content",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_mediaHash",
-				"type": "string"
-			},
-			{
-				"internalType": "bool",
-				"name": "_isPrivate",
-				"type": "bool"
-			}
-		],
-		"name": "createMemory",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"anonymous": false,
 		"inputs": [
 			{
@@ -105,27 +77,19 @@ const contractABI = [
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "_memoryId",
-				"type": "uint256"
+				"internalType": "string",
+				"name": "_title",
+				"type": "string"
 			},
 			{
-				"internalType": "address",
-				"name": "_recipient",
-				"type": "address"
-			}
-		],
-		"name": "shareMemory",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
+				"internalType": "string",
+				"name": "_content",
+				"type": "string"
+			},
 			{
-				"internalType": "uint256",
-				"name": "_memoryId",
-				"type": "uint256"
+				"internalType": "string",
+				"name": "_mediaHash",
+				"type": "string"
 			},
 			{
 				"internalType": "bool",
@@ -133,7 +97,7 @@ const contractABI = [
 				"type": "bool"
 			}
 		],
-		"name": "updatePrivacy",
+		"name": "createMemory",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -234,5 +198,43 @@ const contractABI = [
 		],
 		"stateMutability": "view",
 		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_memoryId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_recipient",
+				"type": "address"
+			}
+		],
+		"name": "shareMemory",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_memoryId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isPrivate",
+				"type": "bool"
+			}
+		],
+		"name": "updatePrivacy",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
 	}
-]
+];
+
+export default contractABI; 
