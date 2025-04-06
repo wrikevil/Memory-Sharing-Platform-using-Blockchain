@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Blockchain-Memory-Sharing/static/css/main.067414cb.css",
+    "main.js": "/Blockchain-Memory-Sharing/static/js/main.d4142092.js",
+    "index.html": "/Blockchain-Memory-Sharing/index.html",
+    "main.067414cb.css.map": "/Blockchain-Memory-Sharing/static/css/main.067414cb.css.map",
+    "main.d4142092.js.map": "/Blockchain-Memory-Sharing/static/js/main.d4142092.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.067414cb.css",
+    "static/js/main.d4142092.js"
+  ]
+}
